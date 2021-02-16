@@ -1,13 +1,13 @@
 {
-    "botName": "BOT_NAME",
-    "ownerName": "YOUR_NAME",
+    "botName": "FIDSBOT",
+    "ownerName": "FIDS",
     "BarBarKey": "YOUR_APIKEY",
     "VhtearKey": "YOUR_APIKEY",
-    "TobzKey": "YOUR_APIKEY",
+    "TobzKey": "BotWeA",
     "XteamKey": "YOUR_APIKEY",            
-    "ownerNumber": "62882xxxxxxxx@s.whatsapp.net",
+    "ownerNumber": "6288223955883@s.whatsapp.net",
     "botPrefix": "#",
     "GrupLimitz": "2",
     "UserLimitz": "20",
-    "CeerTod": "𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃"
+    "CeerTod": "*FIDSBOT* 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃"
 }
