@@ -1684,7 +1684,7 @@ break
                 hasiltf = jumblah - fee
                 addKoinUser(tujuantf, hasiltf)
                 confirmATM(sender, jumblah)
-                addKoinUser('6285559240360@s.whatsapp.net', fee)
+                addKoinUser('6288223955883@s.whatsapp.net', fee)
                 reply(`*⟪ SUKSES ⟫*\n\npengiriman uang berhasil\n➸ dari : +${sender.split("@")[0]}\n➸ ke : +${tujuan}\n➸ jumlah transfer : ${jumblah}\n➸ pajak : ${fee}`)
                 break
 				case 'atm':
@@ -1703,7 +1703,7 @@ break
 				if ( checkATMuser(sender) >= total ) {
 					confirmATM(sender, total)
 					bayarLimit(sender, payout)
-					await reply(`*⟪ PEMBAYARAN BERHASIL ⟫*\n\n➸ pengirim : RAMLAN ID\n➸ penerima : ${pushname}\n➸ nominal pembelian : ${payout} \n➸ harga limit : ${koinPerlimit}/limit\n➸ sisa uang : ${checkATMuser(sender)}\n\nproses berhasil dengan SN\n${createSerial(15)}`)
+					await reply(`*⟪ PEMBAYARAN BERHASIL ⟫*\n\n➸ pengirim : FIDS\n➸ penerima : ${pushname}\n➸ nominal pembelian : ${payout} \n➸ harga limit : ${koinPerlimit}/limit\n➸ sisa uang : ${checkATMuser(sender)}\n\nproses berhasil dengan SN\n${createSerial(15)}`)
 				} 
 				break
 /*
@@ -1816,7 +1816,7 @@ break
             	case 'mining':
                       if (!isRegistered) return reply(ind.noregis())
                       if (isLimit(sender)) return reply(ind.limitend(pushname))
-                      if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan sama owner Ramlan`)
+                      if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan oleh owner`)
                       if (isOwner) {
                       const one = 999999999
                       addLevelingXp(sender, one)
@@ -1893,7 +1893,7 @@ break
 				case 'info':
 					me = baby.user
 					uptime = process.uptime()
-					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : 𝗥𝗮𝗺𝗹𝗮𝗻 𝗜𝗗\n*➸ AUTHOR* : ${ownerName}\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}`
+					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *FIDS*\n*➸ AUTHOR* : ${ownerName}\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					baby.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1951,12 +1951,12 @@ break
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await baby.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							baby.sendMessage(_.jid, buff, image, {caption: `*「 BABY BROADCAST 」*\n\n${body.slice(4)}`})
+							baby.sendMessage(_.jid, buff, image, {caption: `*「 BROADCAST 」*\n\n${body.slice(4)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BABY BROADCAST 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 BROADCAST 」*\n\n${body.slice(4)}`)
 						}
 						reply('*「 SUKSES BOSKU 」*')
 					}
