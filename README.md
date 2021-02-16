@@ -51,7 +51,7 @@ Script ini di modifikasi sama saya sendiri Ramlan.
 ```bash
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
-> git clone https://github.com/Ramlan666/babybot
+> git clone https://github.com/apid13/babybot
 > cd babybot
 > bash install.sh
 > node index.js
