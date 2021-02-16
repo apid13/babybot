@@ -369,7 +369,7 @@ baby.on('group-participants-update', async (anu) => {
             const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
             
 /*
-]=====> RAMLAN ID <=====[
+]=====> FIDS <=====[
 */
             const isEventon = isGroup ? event.includes(from) : false
             const isRegistered = checkRegisteredUser(sender)
@@ -428,7 +428,7 @@ baby.on('group-participants-update', async (anu) => {
             }
         }
 /*
-]=====> CHECK LIMIT BY LANN ID <=====[
+]=====> CHECK LIMIT <=====[
 */
           const checkLimit = (sender) => {
           	let found = false
@@ -449,7 +449,7 @@ baby.on('group-participants-update', async (anu) => {
 				}
 				
 /*
-]=====> LIMITED BY LANN ID <=====[
+]=====> LIMITED <=====[
 */
            const isLimit = (sender) =>{ 
 		      let position = false
