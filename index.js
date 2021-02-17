@@ -475,16 +475,6 @@ baby.on('group-participants-update', async (anu) => {
        }
      }
 
-        
-            if (isGroup) {
-				try {
-					const getmemex = groupMembers.length
-					    if (getmemex <= memberlimit) {
-                            baby.groupLeave(from)
-					    }
-		       } catch (err) { console.error(err)  }
-        }
-      
 /*
 ]=====> ATM <=====[
 */
