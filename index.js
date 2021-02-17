@@ -686,7 +686,7 @@ switch(command) {
 				break
 				case 'nulis':
 				case 'tulis':
-					if (args.length < 1) return reply('Yang mau di tulis titit kah?')
+					if (args.length < 1) return reply('Mau tulis apa kak?')
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
